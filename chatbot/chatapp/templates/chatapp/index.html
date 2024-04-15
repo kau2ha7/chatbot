@@ -1,0 +1,6 @@
+<h1>List of chat rooms</h1>
+{% for cr in chatroom  %}
+<ull>
+    <li><a href="{% url 'chatroom' cr.slug %}">{{cr.name}}</a></li>
+</ul>
+{% endfor %}
